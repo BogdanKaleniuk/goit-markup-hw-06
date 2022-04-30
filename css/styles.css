@@ -820,12 +820,14 @@ body {
   width: 448px;
   height: 120px;
   padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
   padding-left: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background-color: transparent;
   resize: none;
   outline: none;
@@ -879,6 +881,93 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check-text {
+  font-size: 14px;
+  line-height: 1.7;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.check-icon {
+  position: absolute;
+
+  left: 15px;
+  top: 0%;
+  left: 0%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+}
+
+.checkbox-link {
+  color: var(--hover-text-color);
+}
+
+.modal-check:checked + .modal-check-text span {
+  background-color: var(--hover-text-color);
+  border: var(--hover-text-color);
+  border-radius: 2px;
+}
+
+.modal-check:checked + .modal-check-text .check-icon {
+  fill: var(--white-color);
+}
+
+.modal-check-text span {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* .modal-check:checked + .modal-check-text:before {
+  background-color: red;
+} */
+
+.modal-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  border: none;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  padding-top: 10px;
+  padding-right: 55px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  color: var(--white-color);
+  background-color: var(--hover-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
 }
 
 .is-hidden {

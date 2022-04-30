@@ -395,10 +395,12 @@
           <svg class="input-icon"><use href="./images/icons.svg#icon-phone-black" width="18" height="18"></use></svg>
           </div>
             </label> 
+
+            
           <label class="modal-field" for="email">
             <span class="modal-label">Почта</span>
             <div class="input-wrap">
-          <input type="text" name="email" id="email" class="modal-input" placeholder="">
+          <input type="text" name="email" id="email" class="modal-input" placeholder=" " >
           <svg class="input-icon"><use href="./images/icons.svg#icon-email-black" width="18" height="18"></use></svg>
           </div>
           </label>
@@ -408,8 +410,16 @@
             <textarea class="texarea" name="comments" placeholder="Введите текст"></textarea>
             </div>
           </label>
-          
-          <button type="submit">Отправить</button>
+          <input type="checkbox" 
+          class="modal-check visually-hidden" 
+          id="modal-check" 
+          name="privacy-check">
+          <label for="modal-check" class="modal-check-text">
+            <span>
+              <svg class="check-icon"><use href="./images/icons.svg#icon-Checked" width="16" height="15"></use></svg>
+            </span>Соглашаюсь с рассылкой и принимаю&nbsp      
+              <a href target="_blanck" class="checkbox-link"> Условия договора</a></label>
+          <button type="submit" class="modal-btn">Отправить</button>
         </form>
       </div>
     </div>
