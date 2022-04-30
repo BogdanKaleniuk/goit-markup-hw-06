@@ -537,6 +537,7 @@ body {
 }
 
 .footer-soc {
+  display: flex;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -579,6 +580,63 @@ body {
   margin-left: 10px;
 }
 
+.online-div {
+  margin-left: 93px;
+  display: block;
+  text-align: center;
+}
+
+.online-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  position: relative;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.post-btn {
+  position: relative;
+  margin-left: 12px;
+  border: none;
+
+  padding-top: 9px;
+  padding-right: 28px;
+  padding-bottom: 9px;
+  /* padding-left: 28px; */
+  font-weight: 700;
+  font-size: 16px;
+  /*  margin-left: 12px; */
+  /* line-height: 1.88; */
+
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  width: 200px;
+  height: 50px;
+  background-color: var(--hover-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post-btn:hover,
+.post-btn:focus {
+  background-color: #188ce8;
+}
+
+.post-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  fill: var(--white-color);
+  margin-left: 10px;
+}
 /*--- PORTFOLIO ---*/
 
 .section-navigation {
@@ -855,10 +913,13 @@ body {
 }
 
 .input-icon {
+  width: 18px;
+  height: 18px;
+
   position: absolute;
   left: 15px;
   top: 50%;
-  transform: translateY(-10%);
+  transform: translateY(-75%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -899,7 +960,8 @@ body {
 
 .check-icon {
   position: absolute;
-
+  width: 18px;
+  height: 18px;
   left: 15px;
   top: 0%;
   left: 0%;
