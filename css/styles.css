@@ -925,6 +925,7 @@ body {
 
 .icon-x {
   background-color: #ffffff;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button {
@@ -942,6 +943,16 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus {
+  fill: var(--hover-text-color);
+}
+
+.icon-x:hover,
+.icon-x:focus {
+  fill: var(--hover-text-color);
 }
 
 .modal-check-text {
