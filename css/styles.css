@@ -864,11 +864,13 @@ body {
 }
 
 /* .modal-input:hover, */
+.modal-input:hover,
 .modal-input:focus {
   border-color: var(--hover-text-color);
 }
 
-/* .modal-input:hover, */
+/* , */
+.modal-input:hover + .input-icon,
 .modal-input:focus + .input-icon {
   fill: var(--hover-text-color);
 }
@@ -984,7 +986,7 @@ body {
   color: var(--hover-text-color);
 }
 
-.modal-check:checked + .modal-check-text span {
+.modal-check:checked + .modal-check-text .modal-check-icon {
   background-color: var(--hover-text-color);
   border: var(--hover-text-color);
 }
