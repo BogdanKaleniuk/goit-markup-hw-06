@@ -998,6 +998,11 @@ body {
   fill: var(--white-color);
 }
 
+.modal-check-icon:focus {
+  border: none;
+  outline-color: var(--hover-text-color);
+}
+
 .modal-check-icon {
   content: '';
   width: 16px;
@@ -1010,10 +1015,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-/* .modal-check:checked + .modal-check-text:before {
-  background-color: red;
-} */
 
 .modal-btn {
   display: block;
