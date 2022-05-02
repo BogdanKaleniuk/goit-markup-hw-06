@@ -865,19 +865,20 @@ body {
 
 /* .modal-input:hover, */
 .modal-input:hover,
-.modal-input:focus {
+.modal-input:focus,
+.modal-input:not(:placeholder-shown) {
   border-color: var(--hover-text-color);
 }
 
 /* , */
 .modal-input:hover + .input-icon,
-.modal-input:focus + .input-icon {
+.modal-input:focus + .input-icon,
+.modal-input:not(:placeholder-shown) ~ .input-icon {
   fill: var(--hover-text-color);
 }
 
 .texarea {
   width: 100%;
-
   height: 120px;
   padding-top: 12px;
   padding-right: 16px;
@@ -893,7 +894,9 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.texarea:focus {
+.texarea:hover,
+.texarea:focus,
+.texarea:not(:placeholder-shown) {
   border-color: var(--hover-text-color);
 }
 
@@ -995,11 +998,11 @@ body {
   fill: var(--white-color);
 }
 
-.modal-check-text .modal-check-icon {
+.modal-check-icon {
   content: '';
   width: 16px;
   height: 15px;
-  border: 2px solid black;
+  border: 2px solid #212121;
   border-radius: 2px;
 
   margin-right: 8px;
